@@ -1,0 +1,39 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://dataFiles/theme.tres" type="Theme" id=1]
+[ext_resource path="res://dataFiles/menus/script/credit.gd" type="Script" id=2]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.0352941, 0, 0.113725, 1 )
+
+[node name="credit" type="WindowDialog"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 169.0
+margin_top = 99.0
+margin_right = -642.0
+margin_bottom = -99.0
+theme = ExtResource( 1 )
+window_title = "Credit Window"
+script = ExtResource( 2 )
+
+[node name="Panel" type="Panel" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/panel = SubResource( 1 )
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/ScrollContainer"]
+margin_right = 213.0
+margin_bottom = 402.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="Panel/ScrollContainer/VBoxContainer"]
+margin_right = 213.0
+margin_bottom = 402.0
+size_flags_horizontal = 3
+size_flags_vertical = 7

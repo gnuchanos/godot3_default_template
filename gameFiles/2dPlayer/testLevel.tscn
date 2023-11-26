@@ -1,0 +1,109 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://gameFiles/2dPlayer/platform2d.tscn" type="PackedScene" id=1]
+
+[sub_resource type="QuadMesh" id=1]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 0.505865, 0.411111 )
+
+[node name="testLevel" type="Node2D"]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+position = Vector2( 186, 545 )
+scale = Vector2( 170.5, 22.5 )
+mesh = SubResource( 1 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="MeshInstance2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MeshInstance2D/StaticBody2D"]
+scale = Vector2( 1, 1 )
+shape = SubResource( 2 )
+
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+position = Vector2( 365, 500 )
+scale = Vector2( 170.5, 22.5 )
+mesh = SubResource( 1 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="MeshInstance2D2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MeshInstance2D2/StaticBody2D"]
+scale = Vector2( 1, 1 )
+shape = SubResource( 2 )
+
+[node name="MeshInstance2D3" type="MeshInstance2D" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+position = Vector2( 564, 533 )
+scale = Vector2( 170.5, 22.5 )
+mesh = SubResource( 1 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="MeshInstance2D3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MeshInstance2D3/StaticBody2D"]
+scale = Vector2( 1, 1 )
+shape = SubResource( 2 )
+
+[node name="MeshInstance2D4" type="MeshInstance2D" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+position = Vector2( 584, 387 )
+scale = Vector2( 170.5, 22.5 )
+mesh = SubResource( 1 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="MeshInstance2D4"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MeshInstance2D4/StaticBody2D"]
+scale = Vector2( 1, 1 )
+shape = SubResource( 2 )
+
+[node name="MeshInstance2D5" type="MeshInstance2D" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+position = Vector2( 377, 349 )
+scale = Vector2( 170.5, 22.5 )
+mesh = SubResource( 1 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="MeshInstance2D5"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MeshInstance2D5/StaticBody2D"]
+scale = Vector2( 1, 1 )
+shape = SubResource( 2 )
+
+[node name="MeshInstance2D6" type="MeshInstance2D" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+position = Vector2( 166, 291 )
+scale = Vector2( 170.5, 22.5 )
+mesh = SubResource( 1 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="MeshInstance2D6"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MeshInstance2D6/StaticBody2D"]
+scale = Vector2( 1, 1 )
+shape = SubResource( 2 )
+
+[node name="MeshInstance2D7" type="MeshInstance2D" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+position = Vector2( 751, 493 )
+scale = Vector2( 170.5, 22.5 )
+mesh = SubResource( 1 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="MeshInstance2D7"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MeshInstance2D7/StaticBody2D"]
+scale = Vector2( 1, 1 )
+shape = SubResource( 2 )
+
+[node name="MeshInstance2D8" type="MeshInstance2D" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+position = Vector2( 955, 445 )
+scale = Vector2( 170.5, 22.5 )
+mesh = SubResource( 1 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="MeshInstance2D8"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MeshInstance2D8/StaticBody2D"]
+scale = Vector2( 1, 1 )
+shape = SubResource( 2 )
+
+[node name="platform2d" parent="." instance=ExtResource( 1 )]
+position = Vector2( 186, 224 )
