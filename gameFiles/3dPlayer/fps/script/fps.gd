@@ -20,7 +20,6 @@ func _ready():
 
 func _input(event):
 	if event is InputEventMouseMotion:
-		print("Mouse Motion:", event.relative)
 		rotate_y(deg2rad(-event.relative.x * mouse_sensitivity)) 
 		head.rotate_x(deg2rad(-event.relative.y * mouse_sensitivity)) 
 		head.rotation.x = clamp(head.rotation.x, deg2rad(-90), deg2rad(90))
@@ -33,6 +32,7 @@ func _physics_process(delta):
 	head.rotation.x = clamp(head.rotation.x, deg2rad(-90), deg2rad(90))
 	rotate_y(Input.get_action_strength("right_stick_up") * mouse_sensitivity)
 	rotate_y(Input.get_action_strength("right_stick_down") * mouse_sensitivity * -1)
+	print(head.rotation.x, " | ", head.rotation.y)
 
 	direction = Vector3(); move_and_slide(fall, Vector3.UP)
 
